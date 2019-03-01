@@ -8,7 +8,9 @@ For this particular project I extracted data from a Barnes & Noble webpage depic
 
 ## Requirements
 • textblob (sentiment)
+
 • bs4 (BeautifulSoup scraping)
+
 • termcolor (for colored text)
 
 ## Result
