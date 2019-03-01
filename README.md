@@ -1,5 +1,5 @@
 # web-scraping
-Personal portfolio project demonstrating a data analytic technique known as web scraping or
+Personal portfolio project demonstrating a data analytic technique known as web scraping.
 
 ## About
 Web scraping is a technique used to extract certail elements from web pages to develop quantitative resolutions from data. With the use of Sentiment Analysis, a useful method for detecting expression in text, web scraping can become valuable / insightul application for many companies and brands.
