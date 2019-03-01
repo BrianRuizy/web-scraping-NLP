@@ -9,7 +9,7 @@ For this particular project I extracted data from a Barnes & Noble webpage depic
 ## Result
 Output of certain "reviews" with the polarity.
 
-![screen shot 2019-03-01 at 2 36 30 am](https://user-images.githubusercontent.com/23439187/53626292-f1f04a00-3bca-11e9-9c1d-2a4361091c7f.png)
+![screen shot 2019-03-01 at 2 43 09 am](https://user-images.githubusercontent.com/23439187/53626620-d5084680-3bcb-11e9-89e8-36488b1ba566.png)
 
 Output of the count of both positive and negative reviews.
 
