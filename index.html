@@ -1,0 +1,362 @@
+<!-- This html file exemplifies the way in which the python
+algorithm will 'scrape' an actual html file and look for the
+<p> tags which represent a web user comment/review -->
+
+<!-- This html was grabbed from Barnesandnoble.com, which represents
+seller feedback on a particular used book, 'Godel Escher Bach'. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WebScraping</title>
+</head>
+<body>
+
+<div class="review">
+
+    <div id="customer-feedback">
+<table>
+<tbody><tr>
+<td>
+<span class="feedback-name"></span>
+<span class="feedback-date">February 28, 2019</span>
+</td>
+<td>
+<div id="feedback-ratings">
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-empty"></span>
+<span class="gig-rating-stars-empty"></span>
+<span class="gig-rating-stars-empty"></span>
+<span class="gig-rating-stars-empty"></span>
+</div>
+<p class="feedback-text">The book I ordered came with coloring and writing in it.  I was under the impression that the book was in good condition.</p>
+</td>
+</tr>
+</tbody></table>
+<table>
+<tbody><tr>
+<td>
+<span class="feedback-name"></span>
+<span class="feedback-date">February 28, 2019</span>
+</td>
+<td>
+<div id="feedback-ratings">
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+</div>
+<p class="feedback-text">Arrived quickly in excellent condition. Loved the book also.</p>
+</td>
+</tr>
+</tbody></table>
+<table>
+<tbody><tr>
+<td>
+<span class="feedback-name"></span>
+<span class="feedback-date">February 27, 2019</span>
+</td>
+<td>
+<div id="feedback-ratings">
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+</div>
+<p class="feedback-text">The book is in great condition.  I could have pulled it from the shelves of a bookstore that sold only new books.  Thank you for this great purchasing experience, and for a great book!  I read it right away, and loved it.  </p>
+</td>
+</tr>
+</tbody></table>
+<table>
+<tbody><tr>
+<td>
+<span class="feedback-name"></span>
+<span class="feedback-date">February 26, 2019</span>
+</td>
+<td>
+<div id="feedback-ratings">
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+</div>
+<p class="feedback-text">Excellent.</p>
+</td>
+</tr>
+</tbody></table>
+<table>
+<tbody><tr>
+<td>
+<span class="feedback-name"></span>
+<span class="feedback-date">February 24, 2019</span>
+</td>
+<td>
+<div id="feedback-ratings">
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+</div>
+<p class="feedback-text"></p>
+</td>
+</tr>
+</tbody></table>
+<table>
+<tbody><tr>
+<td>
+<span class="feedback-name"></span>
+<span class="feedback-date">February 22, 2019</span>
+</td>
+<td>
+<div id="feedback-ratings">
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-empty"></span>
+<span class="gig-rating-stars-empty"></span>
+<span class="gig-rating-stars-empty"></span>
+<span class="gig-rating-stars-empty"></span>
+</div>
+<p class="feedback-text">Shipping cost (around $4.59) higher than book price (~$2.5). Wow, sucks I Fell for one of those click bait ads. After shipping, taxes book price matches price of a brand new book in store/online. Lesson learnt.</p>
+</td>
+</tr>
+</tbody></table>
+<table>
+<tbody><tr>
+<td>
+<span class="feedback-name"></span>
+<span class="feedback-date">February 14, 2019</span>
+</td>
+<td>
+<div id="feedback-ratings">
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+</div>
+<p class="feedback-text"></p>
+</td>
+</tr>
+</tbody></table>
+<table>
+<tbody><tr>
+<td>
+<span class="feedback-name"></span>
+<span class="feedback-date">February 08, 2019</span>
+</td>
+<td>
+<div id="feedback-ratings">
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+</div>
+<p class="feedback-text"></p>
+</td>
+</tr>
+</tbody></table>
+<table>
+<tbody><tr>
+<td>
+<span class="feedback-name"></span>
+<span class="feedback-date">February 02, 2019</span>
+</td>
+<td>
+<div id="feedback-ratings">
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+</div>
+<p class="feedback-text"></p>
+</td>
+</tr>
+</tbody></table>
+<table>
+<tbody><tr>
+<td>
+<span class="feedback-name"></span>
+<span class="feedback-date">January 31, 2019</span>
+</td>
+<td>
+<div id="feedback-ratings">
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+</div>
+<p class="feedback-text">Mailed quickly. Book in excellent condition. </p>
+</td>
+</tr>
+</tbody></table>
+<table>
+<tbody><tr>
+<td>
+<span class="feedback-name"></span>
+<span class="feedback-date">January 30, 2019</span>
+</td>
+<td>
+<div id="feedback-ratings">
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+</div>
+<p class="feedback-text">Totally worth it! I loved it! Extremely fast shipping, it arrived WAY before the expected shipping date. The book was like new. I’m extremely pleased with my purchase, I would purchase again with no doubt.</p>
+</td>
+</tr>
+</tbody></table>
+<table>
+<tbody><tr>
+<td>
+<span class="feedback-name"></span>
+<span class="feedback-date">January 26, 2019</span>
+</td>
+<td>
+<div id="feedback-ratings">
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-empty"></span>
+</div>
+<p class="feedback-text"></p>
+</td>
+</tr>
+</tbody></table>
+<table>
+<tbody><tr>
+<td>
+<span class="feedback-name"></span>
+<span class="feedback-date">January 14, 2019</span>
+</td>
+<td>
+<div id="feedback-ratings">
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+</div>
+<p class="feedback-text">Book arrived on time and was in great condition for a used book. </p>
+</td>
+</tr>
+</tbody></table>
+<table>
+<tbody><tr>
+<td>
+<span class="feedback-name"></span>
+<span class="feedback-date">January 05, 2019</span>
+</td>
+<td>
+<div id="feedback-ratings">
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+</div>
+<p class="feedback-text">I'm DISAPPOINTED with this book, it arrived highlighted and with lots of writing</p>
+</td>
+</tr>
+</tbody></table>
+<table>
+<tbody><tr>
+<td>
+<span class="feedback-name"></span>
+<span class="feedback-date">January 04, 2019</span>
+</td>
+<td>
+<div id="feedback-ratings">
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+</div>
+<p class="feedback-text">Book was in great condition, delivered on time as promised, great communication!</p>
+</td>
+</tr>
+</tbody></table>
+<table>
+<tbody><tr>
+<td>
+<span class="feedback-name"></span>
+<span class="feedback-date">January 01, 2019</span>
+</td>
+<td>
+<div id="feedback-ratings">
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+</div>
+<p class="feedback-text">excellent service thank you</p>
+</td>
+</tr>
+</tbody></table>
+<table>
+<tbody><tr>
+<td>
+<span class="feedback-name"></span>
+<span class="feedback-date">December 25, 2018</span>
+</td>
+<div id="feedback-ratings">
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+</div>
+<p class="feedback-text">Copy was in good condition as described and arrived in good time.</p>
+</td>
+</tr>
+</tbody></table>
+<table>
+<tbody><tr>
+<td>
+<span class="feedback-name"></span>
+<span class="feedback-date">December 18, 2018</span>
+</td>
+<td>
+<div id="feedback-ratings">
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-empty"></span>
+</div>
+<p class="feedback-text"></p>
+</td>
+</tbody></table>
+<table>
+<tbody><tr>
+<td>
+<span class="feedback-name"></span>
+<span class="feedback-date">December 09, 2018</span>
+</td>
+<td>
+<div id="feedback-ratings">
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+<span class="gig-rating-stars-full"></span>
+</div>
+<p class="feedback-text">It was too difficult for me to understand, still in grade school.</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+</div>
+
+</body>
+</html>
