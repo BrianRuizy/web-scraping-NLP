@@ -7,7 +7,9 @@ Web scraping is a technique used to extract certail elements from web pages to d
 For this particular project I extracted data from a Barnes & Noble webpage depicting a particualar used-book sellers feedback. I managed to gather the sites .html through Chrome's Developer Tools.
 
 ## Result
-### Output of certain "reviews" with the polarity
+## Output of certain "reviews" with the polarity
 ![screen shot 2019-03-01 at 2 36 30 am](https://user-images.githubusercontent.com/23439187/53626292-f1f04a00-3bca-11e9-9c1d-2a4361091c7f.png)
 
-### Output of the count of both positive and negative reviews
+## Output of the count of both positive and negative reviews
+![screen shot 2019-03-01 at 2 36 48 am](https://user-images.githubusercontent.com/23439187/53626312-ff0d3900-3bca-11e9-99bf-d930d65d4ac7.png)
+
