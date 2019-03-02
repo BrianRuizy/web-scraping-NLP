@@ -2,7 +2,7 @@
 Personal portfolio project demonstrating a data analytic technique known as web scraping.
 
 ## About
-Web scraping is a technique used to extract certail elements from web pages to develop quantitative resolutions from data. With the use of Sentiment Analysis, a useful method for detecting expression in text, web scraping can become valuable application for many companies or brands who desire a deeper insight of their clients/ customers.
+Web scraping is a technique used to extract certain elements from web pages to develop quantitative resolutions from data. With the use of Sentiment Analysis, a useful method for detecting expression in text, web scraping can become valuable application for many companies or brands who desire a deeper insight of their clients/ customers.
 
 For this particular project I extracted data from a *Barnes & Noble* webpage depicting a particualar used-book sellers feedback. I managed to gather the sites .html through *Chrome's Developer Tools*.
 
