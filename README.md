@@ -7,9 +7,9 @@ Web scraping is a technique used to extract certail elements from web pages to d
 For this particular project I extracted data from a *Barnes & Noble* webpage depicting a particualar used-book sellers feedback. I managed to gather the sites .html through *Chrome's Developer Tools*.
 
 ## Requirements
-* textblob (sentiment)
-* bs4 (BeautifulSoup scraping)
-* termcolor (for colored text)
+* textblob
+* bs4 (BeautifulSoup)
+* termcolor
 
 ## Result
 Output of some of the "reviews" with the respective polarity preceeding.
