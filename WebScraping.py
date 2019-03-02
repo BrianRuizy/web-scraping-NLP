@@ -31,6 +31,7 @@ positiveCount, negativeCount = 0, 0
 for p in reviews:
     text = p.get_text()
     sentiment = TextBlob(text).sentiment.polarity
+    sentimentStr = " "
 
     # if <p> tag is empty pass to next <p>.
     if len(text) == 0:
@@ -39,11 +40,13 @@ for p in reviews:
         if sentiment >= 0.1:
             sentimentStr = colored("+", "green")
             positiveCount += 1
-        if sentiment <= -0.1:
+
+        else:
             sentimentStr = colored("-", "red")
             negativeCount += 1
 
         print(sentimentStr, p.get_text())
+
 
 print("\nTotal positive reviews: ", colored(positiveCount, "green"))
 print("Total negative reviews: ", colored(negativeCount, "red"))
