@@ -8,7 +8,7 @@ Web scraping is a technique used to extract certain elements from web pages to d
 For this particular project, I extracted data from a *Barnes & Noble* webpage depicting a particular used-book seller feedback. I managed to gather the sites .html through *Chrome's Developer Tools*.
 
 
-## Requirements
+## Dependencies
 * textblob
 * bs4 (BeautifulSoup)
 * termcolor
