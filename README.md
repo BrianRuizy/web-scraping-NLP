@@ -1,4 +1,4 @@
-# web-scraping 📉💻📈
+# Web Scraping 📉💻📈
 Personal portfolio project demonstrating a data analytic technique known as web scraping, on this particular project the analysis will be performed onto *Barnes & Noble* data.
 
 
