@@ -1,5 +1,11 @@
-# Web Scraping 📉💻📈
-Personal portfolio project demonstrating a data analytic technique known as web scraping, on this particular project the analysis will be performed onto *Barnes & Noble* data.
+<h1 align="center">
+    <img alt="Lumen" title="Lumen" src="https://github.com/BrianRuizy/portfolio-website-3.0/blob/master/Misc/BR%20logoTrans.png" width="100"> </br>
+    Web Scraping
+</h1>
+<h4 align="center">
+Personal portfolio project demonstrating a data analytic technique known as web scraping, on this particular project the analysis will be performed onto Barnes & Noble data.
+</h4>
+
 
 
 ## About
