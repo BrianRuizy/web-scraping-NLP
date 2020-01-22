@@ -29,3 +29,5 @@ The output of the count of both positive and negative reviews.
 
 ![screen shot 2019-03-01 at 2 36 48 am](https://user-images.githubusercontent.com/23439187/53626312-ff0d3900-3bca-11e9-99bf-d930d65d4ac7.png)
 
+------
+#### © [Brian Ruiz](https://github.com/BrianRuizy)
